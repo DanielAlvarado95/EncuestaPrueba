@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".view.ResultadosActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRes"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        tools:listitem="@layout/item_rv_result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        android:layout_marginTop="@dimen/common_padding_16"
+/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_atras"
+        android:drawableLeft="@drawable/suma"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/common_padding_16"
+        app:cornerRadius="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

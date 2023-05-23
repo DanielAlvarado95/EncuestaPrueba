@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/common_padding_8"
+                android:hint="Usuario"
+                android:textColorHint="@color/white"
+                android:background="@drawable/stylo_borde"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/white"
+                android:padding="5dp" />
+
+</LinearLayout>

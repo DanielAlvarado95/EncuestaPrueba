@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".view.DetailActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_padding_16"
+        android:layout_marginStart="@dimen/common_padding_16"
+        android:layout_marginEnd="@dimen/common_padding_16"
+        android:layout_marginBottom="@dimen/common_padding_8"
+        app:cardElevation="@dimen/common_padding_8"
+        android:backgroundTint="@color/transparent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/common_padding_8"
+            android:paddingStart="@dimen/common_padding_8"
+            android:paddingEnd="@dimen/common_padding_8"
+            android:layout_margin="@dimen/common_padding_8"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/cuestionario1"
+                app:layout_constraintBottom_toTopOf="@+id/btnSuma"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/suma"
+                android:drawableLeft="@drawable/suma"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:layout_marginTop="@dimen/common_padding_64"
+                app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cornerRadius="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resta"
+                android:drawableLeft="@drawable/menos"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintTop_toBottomOf="@+id/btnSuma"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cornerRadius="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMultiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplicacion"
+                android:drawableLeft="@drawable/multi"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintTop_toBottomOf="@+id/btnResta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cornerRadius="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/historial"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/common_padding_8"
+                app:cornerRadius="4dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

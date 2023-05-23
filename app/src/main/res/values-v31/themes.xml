@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/Splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_splash</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Encuesta</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/daniel</item>
+    </style>
+
+</resources>

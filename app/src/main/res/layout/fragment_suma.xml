@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    tools:context=".view.fragments.SumaFragment">
+
+    <TextView
+        android:id="@+id/tvEncabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_padding_8"
+        android:fontFamily="serif"
+        android:text="@string/selecciona_respuesta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suma"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"        android:textSize="32sp"
+        android:textStyle="bold"
+        android:background="@color/steel_blue"
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_padding_16"
+            android:layout_marginBottom="@dimen/common_padding_8"
+            app:cardElevation="@dimen/common_padding_8"
+            android:backgroundTint="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_16">
+
+                <TextView
+                    android:id="@+id/tvsuma1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suma1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    android:hint="@string/seleccionar"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actSuma1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvsuma2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suma2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/common_padding_8"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    android:hint="@string/seleccionar"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actSuma2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvsuma3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suma3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/common_padding_8"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    android:hint="@string/seleccionar"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actSuma3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvsuma4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suma4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/common_padding_8"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    android:hint="@string/seleccionar"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actSuma4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvsuma5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suma5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/common_padding_8"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_8"
+                    android:layout_marginEnd="@dimen/common_padding_8"
+                    android:hint="@string/seleccionar"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actSuma5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finalizar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginStart="@dimen/common_padding_16"
+            android:layout_marginEnd="@dimen/common_padding_16"
+            android:layout_marginBottom="@dimen/common_padding_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cornerRadius="4dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
